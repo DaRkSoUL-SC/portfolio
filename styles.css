@@ -1,0 +1,172 @@
+/* ============ desktop view .end// ============ */
+.navbar {
+  font-size: 18px;
+  border-bottom: 1px black solid;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  outline:none;
+}
+#link, #logo, #navbarDropdown {
+  text-decoration: none;
+  color: black;
+}
+
+#link:hover, #navbarDropdown:hover {
+  color: black;
+  border-bottom: solid 2px black;
+  animation: Bottom 2s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+@keyframes Bottom {
+  from {
+    border-bottom-color: black;
+  }
+
+  to {
+    border-bottom-color: white;
+  }
+}
+
+
+
+
+.intro {
+  display: block;
+  text-align: center;
+  background-image:url('./images/19362653.jpg');
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:100vh;
+position: relative;
+margin-top: 60px;
+}
+
+.content
+{
+color:#19282F;
+background: white;
+opacity: 70%;
+border-radius: 0 50px 0 50px;
+position: absolute;
+z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+
+padding: 10px;
+ box-shadow: 5px 10px black;
+}
+.content:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+
+.container-fluid {
+  text-align: center;
+  padding-top: 30px;
+ 
+}
+
+.avatar
+{
+
+  width: 20%;
+
+}
+#project {
+  padding: 100px;
+}
+
+.project-tile:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: red;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 3rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background:white;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  border-radius: 2px;
+height: 300px;
+}
+
+.code {
+  color: gray;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+  opacity: 1;
+  transition: 0s
+}
+
+
+.project-image {
+  height: calc(100% - 4.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  padding:10px;
+}
+
+.btn:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
