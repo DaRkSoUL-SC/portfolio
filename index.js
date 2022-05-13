@@ -1,4 +1,4 @@
-var string = "NOTE: This website is not Completely Developed";
+var string = "NOTE: This website is not Completely Developed...Desktop Screen Recommended...";
 var str = string.split("");
 var el = document.getElementById('Home');
 (function animate() {
